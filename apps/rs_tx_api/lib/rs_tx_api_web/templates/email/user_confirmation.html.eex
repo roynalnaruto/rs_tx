@@ -1,0 +1,11 @@
+<p>Welcome,</p>
+
+<p>To confirm your account registration with RsTx, click on the link below.</p>
+
+<p><a href="<%= @link %>">Confirm my account</a></p>
+
+<p>Once you've clicked on the link, we'll ask you to login again for security purposes.</p>
+
+<p>Thank you.</p>
+
+<p>RsTx</p>
