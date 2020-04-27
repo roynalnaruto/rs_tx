@@ -8,6 +8,8 @@ defmodule RsTxCore.Accounts.User do
 
   alias RsTxCore.Accounts.UserRole
 
+  alias RsTxCore.Projects.Project
+
   alias __MODULE__, as: Entity
 
   @type t :: __MODULE__
@@ -23,6 +25,7 @@ defmodule RsTxCore.Accounts.User do
 
     field(:password_reset_id, :binary_id)
 
+    has_many(:projects, Project)
     has_many(:user_roles, UserRole)
     has_many(:roles, through: [:user_roles, :role])
 

@@ -46,6 +46,7 @@ defmodule RsTxCore.MixProject do
       {:httpoison, "1.6.1", override: true},
       {:logger_file_backend, "~> 0.0.10"},
       {:mogrify, "~> 0.5.6"},
+      {:ex_image_info, "~> 0.2.4"},
       {:mogrify_draw, "~> 0.1.0", only: [:dev, :test]},
       {:ex_machina, "~> 2.3", only: [:dev, :test]},
       {:faker, "~> 0.12.0", only: [:dev, :test]},

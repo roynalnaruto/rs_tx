@@ -5,10 +5,14 @@ defmodule RsTxCore.Factory do
 
   alias RsTxCore.Factories.{
     AccountsFactory,
+    AttachmentFactory,
+    ProjectFactory,
     UserFactory
   }
 
+  use AttachmentFactory
   use UserFactory
+  use ProjectFactory
 
   use AccountsFactory
 end

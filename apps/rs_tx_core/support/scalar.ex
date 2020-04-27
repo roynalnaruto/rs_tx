@@ -25,6 +25,15 @@ defmodule RsTxCore.Scalar do
   def integer(min \\ 0, max \\ 1_000),
     do: Faker.Random.Elixir.random_between(min, max)
 
+  def url(),
+    do: Faker.Internet.url()
+
+  def description(),
+    do: Faker.Food.En.description()
+
+  def overview(),
+    do: Faker.Food.En.dish()
+
   def decimal() do
     Faker.Random.Elixir.random_uniform()
     |> D.from_float()

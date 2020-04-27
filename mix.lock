@@ -26,6 +26,7 @@
   "eternal": {:hex, :eternal, "1.2.1", "d5b6b2499ba876c57be2581b5b999ee9bdf861c647401066d3eeed111d096bc4", [:mix], [], "hexpm"},
   "event_bus": {:hex, :event_bus, "1.6.1", "07331328b67ccc76d14a12872013464106390abaa47ea0d6a7755e3524899964", [:mix], [], "hexpm"},
   "event_bus_logger": {:hex, :event_bus_logger, "0.1.7", "f317147d231c3e2220955502c36a1ae2cd13333f4eb42e5276a873036c399016", [:mix], [{:event_bus, ">= 1.6.0", [hex: :event_bus, repo: "hexpm", optional: false]}], "hexpm"},
+  "ex_image_info": {:hex, :ex_image_info, "0.2.4", "610002acba43520a9b1cf1421d55812bde5b8a8aeaf1fe7b1f8823e84e762adb", [:mix], [], "hexpm"},
   "ex_machina": {:hex, :ex_machina, "2.4.0", "09a34c5d371bfb5f78399029194a8ff67aff340ebe8ba19040181af35315eabb", [:mix], [{:ecto, "~> 2.2 or ~> 3.0", [hex: :ecto, repo: "hexpm", optional: true]}, {:ecto_sql, "~> 3.0", [hex: :ecto_sql, repo: "hexpm", optional: true]}], "hexpm"},
   "ex_spec": {:hex, :ex_spec, "2.0.1", "8bdbd6fa85995fbf836ed799571d44be6f9ebbcace075209fd0ad06372c111cf", [:mix], [], "hexpm"},
   "ex_url": {:hex, :ex_url, "1.2.0", "bf59e14b1bde62062d7a91f593800a1496b1a06ada18e8601dee93d02421e554", [:mix], [{:ex_cldr, "~> 2.0", [hex: :ex_cldr, repo: "hexpm", optional: true]}, {:ex_phone_number, "~> 0.1", [hex: :ex_phone_number, repo: "hexpm", optional: true]}, {:gettext, "~> 0.13", [hex: :gettext, repo: "hexpm", optional: true]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}, {:nimble_parsec, "~> 0.5", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm"},
