@@ -74,8 +74,9 @@ defmodule RsTxApi.EventSubscriber do
     with {:ok, user} <- AccountContext.fetch_by_id(user_id),
          {:ok, subject} <- Guardian.subject_for_token(user, nil) do
       query =
-        from t in Token,
+        from(t in Token,
           where: t.sub == ^subject
+        )
 
       {_, _} = Repo.delete_all(query)
 

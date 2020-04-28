@@ -7,6 +7,7 @@ defmodule RsTxCore.Factory do
     AccountsFactory,
     AttachmentFactory,
     ProjectFactory,
+    ProjectsFactory,
     UserFactory
   }
 
@@ -15,4 +16,5 @@ defmodule RsTxCore.Factory do
   use ProjectFactory
 
   use AccountsFactory
+  use ProjectsFactory
 end

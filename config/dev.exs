@@ -21,8 +21,7 @@ config :phoenix,
   stacktrace_depth: 20,
   plug_init_mode: :runtime
 
-config :rs_tx_core, RsTxCore.AssetsExplorer.ApiClient,
-  response_timeout: :timer.seconds(30)
+config :rs_tx_core, RsTxCore.AssetsExplorer.ApiClient, response_timeout: :timer.seconds(30)
 
 config :rs_tx_core, RsTxCore.Attachment,
   mime_types: ["image/gif", "image/jpeg", "image/png"],
