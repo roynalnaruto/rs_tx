@@ -8,8 +8,6 @@ defmodule RsTxCore.Scalar do
   alias Mogrify
   alias Timex
 
-  alias RsTxCore.Accounts, as: AccountContext
-
   def project_dir() do
     case System.fetch_env("PROJECT_DIR") do
       {:ok, root} ->
@@ -191,10 +189,4 @@ defmodule RsTxCore.Scalar do
 
   def tx_hash(),
     do: hex_bytes(32)
-
-  defp random_enum_value(enum) do
-    enum.__enum_map__()
-    |> Enum.map(&elem(&1, 0))
-    |> Enum.random()
-  end
 end

@@ -44,6 +44,20 @@ defmodule RsTxCore.Projects.ProjectMetadata do
     |> validate_url(:url)
   end
 
+  @spec update_changeset(t(), map()) :: Changeset.t()
+  def update_changeset(%Entity{} = entity, attrs) do
+    fields = [:url, :overview, :description]
+
+    image_fields = [:icon]
+
+    entity
+    |> Repo.preload(image_fields)
+    |> Changeset.cast(attrs, fields)
+    |> Changeset.cast_assoc(:icon)
+    |> Changeset.validate_length(:overview, max: 255)
+    |> validate_url(:url)
+  end
+
   defp validate_url(changeset, field, opts \\ []) do
     Changeset.validate_change(changeset, field, fn _, value ->
       case URI.parse(value) do

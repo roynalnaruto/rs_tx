@@ -36,4 +36,13 @@ defmodule RsTxCore.Projects.Project do
     |> Changeset.validate_required(fields)
     |> Changeset.validate_format(:public_key, @public_key_regex)
   end
+
+  @spec update_changeset(t(), map()) :: Changeset.t()
+  def update_changeset(%Entity{} = entity, attrs) do
+    fields = [:public_key]
+
+    entity
+    |> Changeset.cast(attrs, fields)
+    |> Changeset.validate_format(:public_key, @public_key_regex)
+  end
 end
